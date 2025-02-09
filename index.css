@@ -1,0 +1,154 @@
+:root{
+  --primary: #ff970b;
+  --secondary: #5ca6e8;
+  --dark: #353535;
+  --text: #FFF;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  background: var(--dark);
+  color: var(--text);
+  font-family: Trebuchet MS;
+}
+nav{
+  background: var(--primary);
+  height: 5rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1{
+  font-size: 2rem;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li{
+  list-style: none;
+  padding: 0 1rem 0 1rem ;
+}
+nav ul li:hover{
+  background: var(--text);
+  color: var(--primary);
+  cursor: pointer;
+}
+.main{
+  height: calc(100% - 5rem);
+  width: 100%;
+  padding: 2rem;
+}
+.main .text-con{
+   height: 100%;
+}
+.main .text-con .product-con{
+  height: 95%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow-y: auto;
+}
+.heading{
+  padding: 1rem;
+  border-left:solid .5rem var(--secondary);
+}
+.product{
+  background: var(--secondary);
+  height: 25rem;
+  width: 15rem;
+  transition: box-shadow 1s;
+}
+.product .image{
+  height: 70%;
+  padding: 0;
+  background: var(--primary);
+}
+.product h3{
+  padding: .5rem;
+}
+.product div{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.product button{
+  outline: none;
+  border: none;
+  padding: .5rem;
+  font-size: 1.5rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: var(--text);
+  background: var(--primary);
+}
+.product button:hover{
+  background: var(--text);
+  color: var(--primary);
+  cursor: pointer;
+}
+.product img{
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.product:hover{
+  box-shadow: 1px 1px 10px rgba(0,0,0,.8),-2px -2px 20px  rgba(225,225,225,.7);
+}
+footer{
+  background: var(--dark);
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-nav{
+  background: var(--primary);
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  border-radius: 5rem;
+  gap: 1rem;
+}
+footer div{
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.footer-nav h2{
+  background: 2rem;
+  padding: 1rem;
+  border-radius: 5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.footer-nav h2:hover{
+  background: var(--text);
+  color: var(--primary);
+  cursor: pointer;
+}
+footer div p{
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+}
